@@ -52,7 +52,7 @@ def restarVidas(vidas):
     return vidas
 
 def verificarLetra(letra, palabra, respuesta, vidas): #los parámetros son la letra que arriesga el usuario, la palabra a adinvinar, la respuesta que tiene al momento y las vidas restantes
-    flag=False          #puse "flag" pero es solo un indicador de que cambia cuando acierta o queda en false hata tango gane
+   # flag=False          #puse "flag" pero es solo un indicador de que cambia cuando acierta o queda en false hata tango gane
     if letra not in palabra:
         vidas=restarVidas(vidas)        
         print("La letra ingresada no pertenece a la palabra, le restan {} vidas".format(vidas))
@@ -62,11 +62,11 @@ def verificarLetra(letra, palabra, respuesta, vidas): #los parámetros son la le
             if letra==letras:
                 
                 respuesta[indice]=letras
-                if flag==False:
-                    print("Correcto, la letra ingresada pertenece a la palabra")
+                #if flag==False:
+                print("Correcto, la letra ingresada pertenece a la palabra")
                 #print("letras ingresadas: :",respuesta)
-                    flag=True
-        if palabra==respuesta:
+                    #flag=True
+        if palabra=="".join(respuesta):
             return (respuesta,True, vidas) 
         else:
             return (respuesta,False, vidas)   
