@@ -121,9 +121,7 @@ def main(palabra):
                 if opcion==1:
                     inicio()
                 elif opcion==2:
-                    break
-
-                
+                    break                
         elif opcion==2:
             verificacion=adivinarPalabra(palabra, vidas)
             print (verificacion)
