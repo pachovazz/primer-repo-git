@@ -74,7 +74,7 @@ def adivinarPalabra( intento, palabra, vidas):
         return (palabra, True, vidas)
     else:
         vidas=vidas-3
-        print(intento,palabra)
+   #     print(intento,palabra)
         print ("**********************************************************")
         print ("Palabra incorrecta...le restan {} vidas".format(vidas))
         print ("**********************************************************")
